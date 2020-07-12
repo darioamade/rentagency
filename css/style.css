@@ -647,16 +647,9 @@ header {
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 600;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   line-height: 2;
   color: var(--color-grey-dark-3);
-  margin-bottom: 2rem;
-}
-
-@media only screen and (max-width: 1040px) {
-  .heading-4 {
-    margin-bottom: 0rem;
-  }
 }
 
 .plan-p {
@@ -1717,7 +1710,6 @@ h2 .quick-search {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  border: 1px solid red;
 }
 
 .child2 {
@@ -2085,7 +2077,8 @@ h2 .quick-search {
 
 /***********************************************/
 /*****************  BUY-INTRO-HOME ****************/
-.buy-home-intro {
+.buy-home-intro,
+.about-home-intro {
   margin: 0 auto;
   min-height: 60vh;
   width: 100vw;
@@ -2110,10 +2103,29 @@ h2 .quick-search {
           align-items: center;
 }
 
+.about-home-intro {
+  background: #123 url(/img/12.jpg);
+  min-height: 70vh;
+  background-size: cover;
+  background-blend-mode: medium;
+}
+
+#about-home {
+  color: #434141;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #3a3838;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
 /***********************************************/
 .buy-home-text {
   margin: 0 auto;
-  min-height: 60vh;
+  min-height: 20vh;
   max-width: 144rem;
   padding: 2rem;
   text-align: center;
@@ -2146,5 +2158,23 @@ h2 .quick-search {
   letter-spacing: 2px;
   line-height: 1.42857143;
   color: #333;
+}
+
+/*****************  ABOUT-INTRO-HOME ****************/
+.about-home-text {
+  margin: 0 auto;
+  min-height: 20vh;
+  max-width: 144rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-home-text h2 {
+  font-size: 2.4rem;
+  color: #062340;
+  font-family: "ClarendonBT", serif;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
