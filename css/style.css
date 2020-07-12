@@ -51,6 +51,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 298px) {
+  html {
+    font-size: 28.5%;
+  }
+}
+
 body {
   font-family: "Courier Prime", monospace;
   font-family: "Montserrat", sans-serif;
@@ -141,11 +147,16 @@ body {
 /* --------------- Hamburger -menu ---------------- */
 .menu-open {
   position: fixed;
-  top: 20rem;
+  top: 2rem;
   left: 2rem;
   width: 40px;
   height: 20px;
   background-color: rgba(255, 0, 0, 0);
+  z-index: 9000;
+}
+
+#menu-white {
+  background-color: #fff;
 }
 
 .menu-open span {
@@ -387,6 +398,8 @@ header {
   --text-inverse: #333;
   --background: #08182698;
   position: fixed;
+  width: 144rem;
+  margin: 0 auto;
   top: 0;
   left: 0;
   right: 0;
@@ -497,6 +510,9 @@ header {
 
 .home-intro {
   padding: 50vh 0;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
   background: #123 url(/img/bg5.jpg);
   background-size: cover;
   background-blend-mode: lighten;
@@ -1211,6 +1227,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
 }
 
 .home__rooms {
@@ -1410,7 +1427,15 @@ header {
   margin-right: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .search-grid-content h2 {
+    display: none;
+  }
+}
+
 .search {
+  width: 100vw;
+  margin: 0 auto;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1423,6 +1448,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .search {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 31.25em) {
